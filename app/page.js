@@ -1,6 +1,7 @@
 import Link from "next/link";
 import animals from "@/data/animals.json";
 import AnimalCard from "@/components/AnimalCard";
+import HeroCTA from "@/components/HeroCTA";
 import { HiOutlineShieldCheck, HiOutlineTruck, HiOutlineCash } from "react-icons/hi";
 
 const tips = [
@@ -61,20 +62,7 @@ export default function HomePage() {
               farms straight to your screen — compare, choose, and book in
               minutes.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/animals"
-                className="rounded-full bg-accent px-7 py-3 text-sm font-medium text-[#14110f] transition-opacity hover:opacity-90"
-              >
-                Browse animals
-              </Link>
-              <Link
-                href="/register"
-                className="rounded-full border border-border px-7 py-3 text-sm text-text transition-colors hover:border-accent hover:text-accent"
-              >
-                Create an account
-              </Link>
-            </div>
+            <HeroCTA />
           </div>
 
           <div className="animate__animated animate__fadeIn relative h-72 overflow-hidden rounded-3xl border border-border sm:h-96">
